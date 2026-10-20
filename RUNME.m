@@ -24,7 +24,14 @@ switch u_choice
         return
 end
 
-% Execute the model
+% Execute the model and save SimOut for Animate_SimOut
 sim(model);
+SimOut = logsout{1}.Values;
+save(sprintf('./Exec_Scripts/SimOut_case%d.mat', u_choice), 'SimOut');
+if u_choice == 6
+    analyzeHoverTransfer(SimOut, plan);
+end
 % Create sample output plots
-simPlots_GUAM;
+if ~isfield(userStruct, 'enablePlots') || userStruct.enablePlots
+    simPlots_GUAM;
+end

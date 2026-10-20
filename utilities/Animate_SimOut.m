@@ -21,8 +21,8 @@
 close all;
 %DataFname       = 'C:\Users\macheson\Desktop\TTT_AS_Git\GTM-GUAM-simulation\Exec_Scripts\Hover2CruiseSimOut.mat'; % Input SimOut filename or ''
 % DataFname       = 'C:\Users\macheson\Desktop\TTT_AS_Git\GTM-GUAM-simulation\Exec_Scripts\Cruise_Climb_Turn_traj.mat'; % Input SimOut filename or ''
-DataFname       = '/home/andrew/Desktop/sandbox/Generic-Urban-Air-Mobility-GUAM/Exec_Scripts/Cruise_Climb_Turn_traj.mat';
-VideoOutFname   = './Cruise_Climb_Turn_traj.avi'; % Desired filename of output video
+DataFname       = '/home/andrew/Desktop/sandbox/Generic-Urban-Air-Mobility-GUAM/Exec_Scripts/SimOut_case6.mat';
+VideoOutFname   = './SimOut_case6_2.avi'; % Desired filename of output video
 
 % User String to put in movie title
 TitStr          ='Demo Video of RUNME: Cruise Climb Turn,'; % User String to put in movie title
